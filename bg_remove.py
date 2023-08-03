@@ -44,7 +44,7 @@ def fix_image(upload):
                 grey_scale = changeColor(image)
                 col1.write('Black and White')
                 col1.image(grey_scale)
-                col2.write('Gray Fixed')
+                col2.write('Grey Fixed')
                 product= remove(grey_scale)
                 col2.image(product)
                 st.sidebar.download_button("Download fixed colored image", convert_image(product), f"{filename}_grey_fixed.png", "image/png")
